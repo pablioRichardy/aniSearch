@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+body{
+    background-color: black;
+}
+main{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Editting main content*/
+#area{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#search-area{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#search{
+    border: 10px solid white;
+    border-radius: 5px;
+    background-color: white;
+}
+.anime{
+    border: none;
+}
+.btn{
+    border: none;
+    background-color: white;
+    width: 50px;
+    height: 30px;
+}
+i{
+    width: 50px;
+}
+.btn:hover{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    transition: .4s;
+}
+
+/* Editting results*/
+#results{
+    overflow-y: scroll;
+    color: white;
+}
+#results::-webkit-scrollbar{
+    width: 20px;
+}
+#results::-webkit-scrollbar-track{
+    background-color: white;
+}
+#results::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+#results::-webkit-scrollbar-thumb:hover{
+    background-color: white;
+}
+.card{
+    display: flex;
+    height: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    justify-content: space-around;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+img{
+    height: 300px;
+    width: 200px;
+}
+
+/* Edditing footer */
+footer{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+footer a{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+}
+svg{
+    fill: white;
+}
+
+@media (max-width: 900px){
+    .card{
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        gap: 15px;
+        height: 100vh;
+        justify-content: center;
+
+    }
+    .info{
+        width: 100%;
+    }
+}
